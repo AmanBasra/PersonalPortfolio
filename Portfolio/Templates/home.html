@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{%block title%}Aman Basra{%endblock%}
+{%block main%}
+
+{%load static%}
+<section class='titleSection'>
+    <h1>Aman Basra</h1>
+    <p>A personal portfolio</p>
+</section>
+<section class='content'>
+    <h2>A brief introduction</h2>
+    <p>Hi! I'm Aman. I'm a driven proactive individual whose incredibly passionate about technology. I'm 24 years old
+        and currently based in High Wycombe </p>
+</section>
+<section class='content'>
+    <h2>My Professional background</h2>
+    <div class="flex">
+        <p>I have been a Technical Engineer working for MSPs for the
+            last 5 years. I began as a Technical apprentice and moved through Junior Engineer, Sevice Desk engineer to
+            being a Tech advocate in the Seniors and Projects team. I've maintained and developed client sites in both
+            enterprise and edcuation environments. This has given me exposure to many different systems and setups. More
+            recently my work has centered around projects around cloud migrations and moving clients from server based
+            environemnts to cloud based ones.<a href="{%url 'aboutme'%}">Read more</a></p>
+            <img src="{%static 'Assets/pro.jpg'%}" alt="" >
+    </div>
+</section>
+<section class='content'>
+    
+    <div class='flex'>
+        <img src="{%static 'Assets/pro.jpg'%}" alt="" >
+        <div>
+            <h2>My Personal Passions</h2>
+            <p>In my free time I enjoy exploring various technological projects, both Hardware based and
+                software, one of which include this site which I coded from the ground up using the django framework. I'm
+                passionate about using software to my advantage both personally and proffessionally to automate and simplify
+                repetitive tasks.<a href="{%url 'portfolio'%}">Read more</a></p>
+        </div>
+    </div>
+</section>
+</section>
+<section class="content">
+    <h2>Hardware Projects</h2>
+    </div>
+</section>
+{%endblock%}

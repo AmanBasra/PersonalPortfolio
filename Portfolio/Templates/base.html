@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{%block title%}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id='particles-js'>
+    </div>
+    <nav>
+        <a href="{%url 'home'%}" class="navItem">Home</a>
+        <a href="{%url 'aboutme'%}" class="navItem">About Me</a>
+        <a href="#" class="navItem">Portfolio</a>
+        <a href="#" class="navItem">Contact Me</a>
+    </nav>
+    <main>
+        {%block main%}{% endblock %}
+    </main>
+    <script src="{% static '/js/particles.js'%}"></script>
+    <script src="{% static '/js/app.js'%}"></script>
+</body>
+
+</html>

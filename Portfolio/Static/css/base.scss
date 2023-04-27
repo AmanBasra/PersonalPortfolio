@@ -1,0 +1,154 @@
+$darkGrey: #202124;
+$middleGrey: #35363A;
+$lightGrey: #bec1c5;
+$blue: #5cc9ff;
+
+body::-webkit-scrollbar-track {
+    background-color: $lightGrey;
+}
+
+p {
+    font-size: 25px;
+
+    a {
+        color: $blue;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: $lightGrey;
+    font-style: none;
+    font-weight: 100;
+}
+
+nav {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navItem {
+    font-size: 25px;
+    padding-left: 5rem;
+    text-decoration: none;
+    color: $lightGrey;
+    z-index: 1;
+
+    :hover {
+        cursor: grab;
+    }
+}
+
+li {
+    display: block;
+    font-size: 25px;
+}
+
+ul {
+    display: block;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#particles-js {
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #202124;
+    background-image: url("");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+    background-attachment: scroll;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleSection {
+    position: relative;
+    width: 300px;
+    top: 15vh;
+    left: 2.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid $lightGrey;
+    filter: drop-shadow(-10px 10px 10px black);
+
+    p {
+        color: $blue;
+    }
+}
+
+.aman {
+    position: relative;
+    left: 55%;
+    top: -55rem;
+    border-radius: 10px;
+    filter: drop-shadow(-10px 10px 10px black);
+}
+
+.content {
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    margin-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    background-color: $middleGrey;
+    position: relative;
+    flex: 100%;
+    filter: drop-shadow(-10px 10px 10px black);
+
+    h2 {
+        color: $blue;
+    }
+
+    p {
+        max-width: 165ch;
+    }
+
+}
+
+.flex {
+    display: flex;
+
+
+    p {
+        flex: 60%;
+    }
+
+    img {
+        position: relative;
+        width: 250px;
+        flex: 10%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
