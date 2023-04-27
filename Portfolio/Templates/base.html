@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{%block title%}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel='icon' href="{%static "Assets/Icon.png"%}">
     <link rel="stylesheet" href="{%static 'css/base.css'%}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
@@ -23,7 +23,7 @@
     <nav>
         <a href="{%url 'home'%}" class="navItem">Home</a>
         <a href="{%url 'aboutme'%}" class="navItem">About Me</a>
-        <a href="#" class="navItem">Portfolio</a>
+        <a href="{%url 'portfolio'%}" class="navItem">Portfolio</a>
         <a href="#" class="navItem">Contact Me</a>
     </nav>
     <main>

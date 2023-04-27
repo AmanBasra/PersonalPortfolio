@@ -24,6 +24,11 @@ body {
     font-weight: 100;
 }
 
+.Logo{
+    position:absolute;
+    width:20px;
+    z-index: 2;
+}
 nav {
     position: absolute;
     top: 2rem;
@@ -138,7 +143,7 @@ main {
 
 .flex {
     display: flex;
-
+    align-items: center;
 
     p {
         flex: 60%;
@@ -146,9 +151,11 @@ main {
 
     img {
         position: relative;
-        width: 250px;
-        flex: 10%;
+        width: 500px;
+        flex: 20%;
         padding-left: 1rem;
         padding-right: 1rem;
+        border-radius: 10px;
+
     }
 }

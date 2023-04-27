@@ -126,14 +126,16 @@ main {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 .flex p {
   flex: 60%;
 }
 .flex img {
   position: relative;
-  width: 250px;
-  flex: 10%;
+  width: 500px;
+  flex: 20%;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=base.css.map */
