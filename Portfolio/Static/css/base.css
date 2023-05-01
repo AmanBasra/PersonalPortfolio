@@ -123,28 +123,9 @@ main {
   max-width: 165ch;
 }
 
-.content1 {
-  top: 30vh;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 20px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: 1rem;
-  border-radius: 10px;
-  background-color: #35363A;
-  position: relative;
-  flex: 100%;
-  filter: drop-shadow(-10px 10px 10px black);
-}
-.content1 p {
-  max-width: 25ch;
-  font-size: 40px;
-}
-
 .contentleft {
   left: 0;
-  margin-left: 0;
+  margin-left: 2rem;
   top: 30vh;
   width: -moz-fit-content;
   width: fit-content;
@@ -161,19 +142,18 @@ main {
   color: #5cc9ff;
 }
 .contentleft div {
-  max-width: 165ch;
+  max-width: 50ch;
   font-size: 40px;
 }
 
 .contentright {
-  left: 26%;
   top: 30vh;
+  right: 0;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 20px;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  margin-left: 1rem;
+  margin-left: 35%;
+  margin-right: 2rem;
   border-radius: 10px;
   background-color: #35363A;
   position: relative;
@@ -181,7 +161,7 @@ main {
   filter: drop-shadow(-10px 10px 10px black);
 }
 .contentright div {
-  max-width: 50ch;
+  max-width: 45ch;
   font-size: 40px;
 }
 
@@ -190,6 +170,7 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   left: 50%;
+  padding: 2rem;
   transform: translate(-50%);
   border-radius: 10px;
   background-color: #35363A;
