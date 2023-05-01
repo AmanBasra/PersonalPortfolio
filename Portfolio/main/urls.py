@@ -7,4 +7,5 @@ urlpatterns = [
     path('home', views.home.as_view(), name='home'),
     path('aboutme', views.aboutme.as_view(), name='aboutme'),
     path('portfolio', views.portfolio.as_view(), name='portfolio'),
+    path('contactme', views.contactme.as_view(), name='contactme'),
 ]

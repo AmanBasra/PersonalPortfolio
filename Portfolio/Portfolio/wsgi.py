@@ -1,16 +1,11 @@
-"""
-WSGI config for Portfolio project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
-"""
-
 import os
 
+import sys, site
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Portfolio.settings')
+# Add the app’s directory to the PYTHONPATH
 
+sys.path.append("/home/abasra/PersonalPortfolio/Portfolio")
+os.environ["DJANGO_SETTINGS_MODULE"] = "settings"
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 application = get_wsgi_application()

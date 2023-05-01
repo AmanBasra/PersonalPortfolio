@@ -11,3 +11,6 @@ class aboutme(TemplateView):
 
 class portfolio(TemplateView):
     template_name='portfolio.html'
+
+class contactme(TemplateView):
+    template_name='contactme.html'

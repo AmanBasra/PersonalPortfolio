@@ -185,6 +185,23 @@ main {
   font-size: 40px;
 }
 
+.contentcenter {
+  top: 30vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  background-color: #35363A;
+  position: relative;
+  flex: 100%;
+  filter: drop-shadow(-10px 10px 10px black);
+}
+.contentcenter p {
+  max-width: 25ch;
+  font-size: 40px;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -199,7 +216,6 @@ main {
   position: relative;
   width: 500px;
   flex: 10%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
   border-radius: 10px;
 }/*# sourceMappingURL=base.css.map */
