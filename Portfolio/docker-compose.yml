@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  django:
+    container_name: portfolio
+    image: portfolio:0.0.1
+    build: .
+    ports:
+      - "8000:80"
+    command: python3 manage.py runserver 0.0.0.0:8000
+    restart: unless-stopped
